@@ -1,0 +1,6 @@
+site_name: Sunaba Docs
+
+theme:
+  name: mkdocs
+  color_mode: auto
+  logo: images/icon.png
