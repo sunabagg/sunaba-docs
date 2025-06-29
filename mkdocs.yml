@@ -1,5 +1,5 @@
 site_name: Sunaba Docs
-site_url: docs.sunaba.gg
+site_url: http://docs.sunaba.gg
 
 theme:
   name: mkdocs
