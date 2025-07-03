@@ -7,6 +7,7 @@ To compile, you will need the following:
 - **[CMake](https://cmake.org/)** v3.22+
 - C++ Compiler with at least **C++17** support (any recent compiler)
 - Python 3.8+
+- OpenSSL for luasec
 - (optional) pkgconf for LuaJIT support
 - vcpkg for installing OpenSSL and (optional) LuaJIT 
 - (optional) **[ccache](https://ccache.dev/)** for faster rebuilds
