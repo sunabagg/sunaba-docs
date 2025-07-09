@@ -1,4 +1,4 @@
-# Compiling the runtime
+# Compiling Sunaba Player
 
 ## Prerequisites
 
