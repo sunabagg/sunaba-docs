@@ -48,6 +48,10 @@
 <li>
     <a href="../compile-runtime/" class="dropdown-item">Compiling the runtime</a>
 </li>
+                                    
+<li>
+    <a href="../compile-studio/" class="dropdown-item">Compiling Sunaba Studio</a>
+</li>
                                 </ul>
                             </li>
                         </ul>
@@ -101,6 +105,10 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            <li class="nav-item" data-bs-level="2"><a href="#getting-the-runtime-libraries" class="nav-link">Getting the runtime libraries</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
             <li class="nav-item" data-bs-level="2"><a href="#build-run" class="nav-link">Build &amp; Run</a>
               <ul class="nav flex-column">
               </ul>
@@ -122,9 +130,10 @@
 <ul>
 <li><strong><a href="https://haxe.org/">Haxe</a></strong> v4.3.0+</li>
 <li><strong><a href="https://nodejs.org/en">NodeJS</a></strong></li>
+<li><strong><a href="https://godotengine.org/">Godot</a></strong> v4.4.1+</li>
 </ul>
 <h2 id="getting-the-repository">Getting the repository</h2>
-<pre><code class="language-sh">$ git clone https://github.com/sunabagg/sunabaplayer.git
+<pre><code class="language-sh">$ git clone https://github.com/sunabagg/sunaba-player.git
 $ cd sunaba-player
 </code></pre>
 <h2 id="installing-haxe-dependencies">Installing haxe dependencies</h2>
@@ -132,15 +141,23 @@ $ cd sunaba-player
 $ haxelib git tsukuru https://github.com/sunabagg/tsukuru.git
 $ haxelib install hxnodejs
 </code></pre>
+<h2 id="getting-the-runtime-libraries">Getting the runtime libraries</h2>
+<p>You will need to obtain the necessary runtime libraries for you target platform either by <a href="../compile-runtime/">compiling them</a> or obtaining pre-built ones from GitHub Actions, and placing the <code>lib</code> folder inside the <code>template</code> folder</p>
 <h2 id="build-run">Build &amp; Run</h2>
 <p>Here's an example of how to build &amp; run Sunaba Player from the command line</p>
-<pre><code class="language-sh">$ haxe buildsys.hxml
-$ node build run
+<h3 id="windows">Windows</h3>
+<pre><code class="language-sh">./build run
+</code></pre>
+<h3 id="unix-like-systems-macos-linux">Unix-like systems ( macOS, Linux )</h3>
+<pre><code class="language-sh">$ ./build.sh run
 </code></pre>
 <h2 id="build-export">Build &amp; Export</h2>
 <p>Here's an example of how to build &amp; export a release version</p>
-<pre><code class="language-sh">$ haxe buildsys.hxml
-$ node build export -release
+<h3 id="windows_1">Windows</h3>
+<pre><code class="language-sh">./build export -release
+</code></pre>
+<h3 id="unix-like-systems-macos-linux_1">Unix-like systems ( macOS, Linux )</h3>
+<pre><code class="language-sh">$ ./build.sh export -release
 </code></pre></div>
             </div>
         </div>
