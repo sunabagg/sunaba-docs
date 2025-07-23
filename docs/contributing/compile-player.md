@@ -6,6 +6,7 @@ To compile, you will need the following:
 
 - **[Haxe](https://haxe.org/)** v4.3.0+
 - **[NodeJS](https://nodejs.org/en)**
+- **[Godot](https://godotengine.org/)** v4.4.1+
 
 ## Getting the repository
 
