@@ -4,27 +4,27 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
-        <link rel="canonical" href="http://docs.sunaba.gg/">
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Sunaba Docs</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/fontawesome.min.css" rel="stylesheet">
-        <link href="css/brands.min.css" rel="stylesheet">
-        <link href="css/solid.min.css" rel="stylesheet">
-        <link href="css/v4-font-face.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="canonical" href="http://docs.sunaba.gg/contributing/compile-player/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Compiling Sunaba Player - Sunaba Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">Sunaba Docs</a>
+                <a class="navbar-brand" href="../..">Sunaba Docs</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,22 +35,22 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href="." class="nav-link active" aria-current="page">Home</a>
+                                <a href="../.." class="nav-link">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Contributing</a>
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Contributing</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="contributing/compile-player/" class="dropdown-item">Compiling Sunaba Player</a>
+    <a href="./" class="dropdown-item active" aria-current="page">Compiling Sunaba Player</a>
 </li>
                                     
 <li>
-    <a href="contributing/compile-runtime/" class="dropdown-item">Compiling the runtime</a>
+    <a href="../compile-runtime/" class="dropdown-item">Compiling the runtime</a>
 </li>
                                     
 <li>
-    <a href="contributing/compile-studio/" class="dropdown-item">Compiling Sunaba Studio</a>
+    <a href="../compile-studio/" class="dropdown-item">Compiling Sunaba Studio</a>
 </li>
                                 </ul>
                             </li>
@@ -63,12 +63,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href="../.." class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="contributing/compile-player/" class="nav-link">
+                                <a rel="next" href="../compile-runtime/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -76,7 +76,7 @@
                 </div>
             </div>
         </div>
-        <script src="js/darkmode.js"></script>
+        <script src="../../js/darkmode.js"></script>
 
         <div class="container">
             <div class="row">
@@ -91,8 +91,32 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#home" class="nav-link">Home</a>
+            <li class="nav-item" data-bs-level="1"><a href="#compiling-sunaba-player" class="nav-link">Compiling Sunaba Player</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#prerequisites" class="nav-link">Prerequisites</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#getting-the-repository" class="nav-link">Getting the repository</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#installing-haxe-dependencies" class="nav-link">Installing haxe dependencies</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#getting-the-runtime-libraries" class="nav-link">Getting the runtime libraries</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#build-run" class="nav-link">Build &amp; Run</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#build-export" class="nav-link">Build &amp; Export</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -100,8 +124,41 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="home">Home</h1>
-<p>Welcome to the official docs for Sunaba, A 3D First and Third Person Singleplayer and Multiplayer Sandbox game centered on User Generated Content. Currently in pre-alpha</p></div>
+<h1 id="compiling-sunaba-player">Compiling Sunaba Player</h1>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>To compile, you will need the following:</p>
+<ul>
+<li><strong><a href="https://haxe.org/">Haxe</a></strong> v4.3.0+</li>
+<li><strong><a href="https://nodejs.org/en">NodeJS</a></strong></li>
+<li><strong><a href="https://godotengine.org/">Godot</a></strong> v4.4.1+</li>
+</ul>
+<h2 id="getting-the-repository">Getting the repository</h2>
+<pre><code class="language-sh">$ git clone https://github.com/sunabagg/sunaba-player.git
+$ cd sunaba-player
+</code></pre>
+<h2 id="installing-haxe-dependencies">Installing haxe dependencies</h2>
+<pre><code class="language-sh">$ haxelib git sunaba https://github.com/sunabagg/sunaba.git
+$ haxelib git tsukuru https://github.com/sunabagg/tsukuru.git
+$ haxelib install hxnodejs
+</code></pre>
+<h2 id="getting-the-runtime-libraries">Getting the runtime libraries</h2>
+<p>You will need to obtain the necessary runtime libraries for you target platform either by <a href="../compile-runtime/">compiling them</a> or obtaining pre-built ones from GitHub Actions, and placing the <code>lib</code> folder inside the <code>template</code> folder</p>
+<h2 id="build-run">Build &amp; Run</h2>
+<p>Here's an example of how to build &amp; run Sunaba Player from the command line</p>
+<h3 id="windows">Windows</h3>
+<pre><code class="language-sh">./build run
+</code></pre>
+<h3 id="unix-like-systems-macos-linux">Unix-like systems ( macOS, Linux )</h3>
+<pre><code class="language-sh">$ ./build.sh run
+</code></pre>
+<h2 id="build-export">Build &amp; Export</h2>
+<p>Here's an example of how to build &amp; export a release version</p>
+<h3 id="windows_1">Windows</h3>
+<pre><code class="language-sh">./build export -release
+</code></pre>
+<h3 id="unix-like-systems-macos-linux_1">Unix-like systems ( macOS, Linux )</h3>
+<pre><code class="language-sh">$ ./build.sh export -release
+</code></pre></div>
             </div>
         </div>
 
@@ -109,13 +166,13 @@
             <hr>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
         <script>
-            var base_url = ".",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js"></script>
-        <script src="search/main.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -180,8 +237,3 @@
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.6.1
-Build Date UTC : 2025-07-23 13:25:47.901552+00:00
--->

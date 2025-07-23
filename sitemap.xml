@@ -4,4 +4,16 @@
          <loc>http://docs.sunaba.gg/</loc>
          <lastmod>2025-07-23</lastmod>
     </url>
+    <url>
+         <loc>http://docs.sunaba.gg/contributing/compile-player/</loc>
+         <lastmod>2025-07-23</lastmod>
+    </url>
+    <url>
+         <loc>http://docs.sunaba.gg/contributing/compile-runtime/</loc>
+         <lastmod>2025-07-23</lastmod>
+    </url>
+    <url>
+         <loc>http://docs.sunaba.gg/contributing/compile-studio/</loc>
+         <lastmod>2025-07-23</lastmod>
+    </url>
 </urlset>
