@@ -27,16 +27,30 @@ $ haxelib install hxnodejs
 
 Here's an example of how to build & run Sunaba Player from the command line
 
+### Windows
+
 ```sh
-$ haxe buildsys.hxml
-$ node build run
+./build run
+```
+
+### Unix-like systems ( macOS, Linux )
+
+```sh
+$ ./build.sh run
 ```
 
 ## Build & Export
 
 Here's an example of how to build & export a release version
 
+### Windows
+
 ```sh
-$ haxe buildsys.hxml
-$ node build export -release
+./build export -release
+```
+
+### Unix-like systems ( macOS, Linux )
+
+```sh
+$ ./build.sh export -release
 ```
