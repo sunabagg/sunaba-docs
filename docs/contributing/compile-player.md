@@ -23,6 +23,10 @@ $ haxelib git tsukuru https://github.com/sunabagg/tsukuru.git
 $ haxelib install hxnodejs
 ```
 
+## Getting the runtime libraries
+
+You will need to obtain the necessary runtime libraries for you target platform either by [compiling them](compile-runtime.md) or obtaining pre-built ones from GitHub Actions
+
 ## Build & Run
 
 Here's an example of how to build & run Sunaba Player from the command line
