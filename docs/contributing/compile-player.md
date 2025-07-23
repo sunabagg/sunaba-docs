@@ -11,7 +11,7 @@ To compile, you will need the following:
 ## Getting the repository
 
 ```sh
-$ git clone https://github.com/sunabagg/sunabaplayer.git
+$ git clone https://github.com/sunabagg/sunaba-player.git
 $ cd sunaba-player
 ```
 
