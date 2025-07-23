@@ -25,7 +25,7 @@ $ haxelib install hxnodejs
 
 ## Getting the runtime libraries
 
-You will need to obtain the necessary runtime libraries for you target platform either by [compiling them](compile-runtime.md) or obtaining pre-built ones from GitHub Actions
+You will need to obtain the necessary runtime libraries for you target platform either by [compiling them](compile-runtime.md) or obtaining pre-built ones from GitHub Actions, and placing the `lib` folder inside the `template` folder
 
 ## Build & Run
 
