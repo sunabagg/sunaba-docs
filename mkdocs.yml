@@ -2,6 +2,6 @@ site_name: Sunaba Docs
 site_url: http://docs.sunaba.gg
 
 theme:
-  name: mkdocs
+  name: readthedocs
   color_mode: auto
-  logo: images/icon.png
+  logo: images/logo.png
