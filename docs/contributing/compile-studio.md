@@ -27,13 +27,13 @@ $ haxelib install hxnodejs
 
 You will need to obtain the necessary runtime libraries for you target platform either by [compiling them](compile-runtime.md) or by download prebuilt one using the `update` option in the build command
 
-### Windows
+#### Windows
 
 ```sh
 ./build update
 ```
 
-### Unix-like systems ( macOS, Linux )
+#### Unix-like systems ( macOS, Linux )
 
 ```sh
 $ ./build.sh update
@@ -43,13 +43,13 @@ $ ./build.sh update
 
 Here's an example of how to build & run Sunaba Player from the command line
 
-### Windows
+#### Windows
 
 ```sh
 ./build run
 ```
 
-### Unix-like systems ( macOS, Linux )
+#### Unix-like systems ( macOS, Linux )
 
 ```sh
 $ ./build.sh run
@@ -59,13 +59,13 @@ $ ./build.sh run
 
 Here's an example of how to build & export a release version
 
-### Windows
+#### Windows
 
 ```sh
 ./build export -release
 ```
 
-### Unix-like systems ( macOS, Linux )
+#### Unix-like systems ( macOS, Linux )
 
 ```sh
 $ ./build.sh export -release
