@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="http://docs.sunaba.gg/contributing/compile-studio/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Compiling Sunaba Studio - Sunaba Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Compiling Sunaba Studio";
+        var mkdocs_page_input_path = "contributing/compile-studio.md";
+        var mkdocs_page_url = "/contributing/compile-studio/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../images/logo.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Contributing</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../compile-player/">Compiling Sunaba Player</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../compile-runtime/">Compiling the runtime</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Compiling Sunaba Studio</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#getting-the-repository">Getting the repository</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#installing-haxe-dependencies">Installing haxe dependencies</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#getting-the-runtime-libraries">Getting the runtime libraries</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#windows">Windows</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#unix-like-systems-macos-linux">Unix-like systems ( macOS, Linux )</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#build-run">Build &amp; Run</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#windows_1">Windows</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#unix-like-systems-macos-linux_1">Unix-like systems ( macOS, Linux )</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#build-export">Build &amp; Export</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#windows_2">Windows</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#unix-like-systems-macos-linux_2">Unix-like systems ( macOS, Linux )</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Sunaba Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Contributing</li>
+      <li class="breadcrumb-item active">Compiling Sunaba Studio</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="compiling-sunaba-studio">Compiling Sunaba Studio</h1>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>To compile, you will need the following:</p>
+<ul>
+<li><strong><a href="https://haxe.org/">Haxe</a></strong> v4.3.0+</li>
+<li><strong><a href="https://nodejs.org/en">NodeJS</a></strong></li>
+<li><strong><a href="https://godotengine.org/">Godot</a></strong> v4.4.1+</li>
+</ul>
+<h2 id="getting-the-repository">Getting the repository</h2>
+<pre><code class="language-sh">$ git clone https://github.com/sunabagg/sunaba-studio.git
+$ cd sunaba-studio
+</code></pre>
+<h2 id="installing-haxe-dependencies">Installing haxe dependencies</h2>
+<pre><code class="language-sh">$ haxelib git sunaba https://github.com/sunabagg/sunaba.git
+$ haxelib git tsukuru https://github.com/sunabagg/tsukuru.git
+$ haxelib install hxnodejs
+</code></pre>
+<h2 id="getting-the-runtime-libraries">Getting the runtime libraries</h2>
+<p>You will need to obtain the necessary runtime libraries for you target platform either by <a href="../compile-runtime/">compiling them</a> or by download prebuilt one using the <code>update</code> option in the build command</p>
+<h4 id="windows">Windows</h4>
+<pre><code class="language-sh">./build update
+</code></pre>
+<h4 id="unix-like-systems-macos-linux">Unix-like systems ( macOS, Linux )</h4>
+<pre><code class="language-sh">$ ./build.sh update
+</code></pre>
+<h2 id="build-run">Build &amp; Run</h2>
+<p>Here's an example of how to build &amp; run Sunaba Player from the command line</p>
+<h4 id="windows_1">Windows</h4>
+<pre><code class="language-sh">./build run
+</code></pre>
+<h4 id="unix-like-systems-macos-linux_1">Unix-like systems ( macOS, Linux )</h4>
+<pre><code class="language-sh">$ ./build.sh run
+</code></pre>
+<h2 id="build-export">Build &amp; Export</h2>
+<p>Here's an example of how to build &amp; export a release version</p>
+<h4 id="windows_2">Windows</h4>
+<pre><code class="language-sh">./build export -release
+</code></pre>
+<h4 id="unix-like-systems-macos-linux_2">Unix-like systems ( macOS, Linux )</h4>
+<pre><code class="language-sh">$ ./build.sh export -release
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../compile-runtime/" class="btn btn-neutral float-left" title="Compiling the runtime"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../compile-runtime/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
